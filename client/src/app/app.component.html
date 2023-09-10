@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+
+<ul>
+    <li *ngFor="let user of users">
+        {{user.id}}-{{user.userName}}
+    </li>
+</ul>
+
+<table border="4" style="border-color:blue">
+    <tr border="2" style="background-color:aqua" *ngFor="let user of users">
+        <td>
+            {{user.id}}-{{user.userName}}
+        </td>
+    </tr>
+</table>
